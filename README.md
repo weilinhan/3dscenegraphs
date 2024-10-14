@@ -11,7 +11,7 @@ This package depends on the Ubuntu Humble version. We are using the ZED 2 depth 
 ```bash
 cd ~/ros2_ws/src
 git clone https://github.com/weilinhan/3dscenegraphs.git
-cd ~/3d_scene_graphs
+cd ~/3dscenegraphs
 pip3 install -r yolov8_ros/requirements.txt
 cd ~/ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
@@ -24,7 +24,7 @@ We have trained models the handycb.pt model for hand detection and using YOLOv8 
 ## Usage
 First, we need to launch the camera node.
 ```bash
-cd ~/3d_scene_graphs
+cd ~/3dscenegraphs
 ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2
 ```
 Since the ZED2 camera sends image data in the bgra8 format by default, we need to change the data format to bgr8 in order to use it with YOLO.
@@ -34,7 +34,7 @@ python image_publisher.py
 ```
 Launch the package.
 ```bash
-cd ~/3d_scene_graphs
+cd ~/3dscenegraphs
 ros2 launch yolov8_bringup yolov8_3d.launch.py input_image_topic:=/image_converted image_reliability:=1 input_depth_topic:=/zed/zed_node/depth/depth_registered input_depth_info_topic:=/zed/zed_node/depth/camera_info depth_image_reliability:=1 depth_info_reliability:=1 target_frame:=zed_left_camera_optical_frame
 ```
 ![rosgraph](rosgraph.png)
