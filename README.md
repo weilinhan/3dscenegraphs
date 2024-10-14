@@ -5,6 +5,7 @@ This project provides a ROS 2 wrapper based on Ultralytics YOLOv8 and the ZED 2 
 1. Installation
 2. Models
 3. Usage
+4. Demo
 
 ## Installation
 This package depends on the Ubuntu Humble version. We are using the ZED 2 depth camera by default, so please ensure that the [zed-ros2-wrapper package](https://github.com/stereolabs/zed-ros2-wrapper) is installed before running the following programs.
