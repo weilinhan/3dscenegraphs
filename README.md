@@ -1,6 +1,7 @@
 # **3d_scene_graphs**
 This project provides a ROS 2 wrapper based on Ultralytics YOLOv8 and the ZED 2 depth camera, enabling real-time object detection, tracking, instance segmentation, human pose estimation, and Oriented Bounding Box (OBB) functionality. Additionally, it supports 3D object detection using depth images, incorporating the ability to assess static and dynamic spatial relationships between objects and generate segmented visual representations of these relationships.
 
+For more detailed information about the project, please refer to the blog post: [https://medium.com/@hanweilin1023957679/hi-aed7a33f09e2](https://medium.com/@hanweilin1023957679/hi-aed7a33f09e2)
 ## Table of Contents
 1. Installation
 2. Models
