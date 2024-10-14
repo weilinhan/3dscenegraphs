@@ -1,0 +1,4 @@
+std_msgs/Header header
+DetectionArray detections_from_topic1
+DetectionArray detections_from_topic2
+
